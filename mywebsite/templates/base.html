@@ -1,0 +1,35 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include "snippets/styles.html" %}
+
+    <title>Belajar Django | {{judul}} </title>
+  </head>
+  <body>
+
+    {% include "snippets/navbar.html" %}
+
+    <div class="container">
+      <div class="row justify-content-center m-t-80">
+        {% block content1 %}
+          
+        {% endblock content1 %}
+      </div>
+      <div class="row justify-content-center m-t-80">
+        {% block content2 %}
+          
+        {% endblock content2 %}
+      </div>
+    </div>
+
+    {% include "snippets/footer.html" %}
+
+    {% include "snippets/scripts.html" %}
+
+  </body>
+</html>
