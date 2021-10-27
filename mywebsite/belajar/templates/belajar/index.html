@@ -35,8 +35,15 @@
 {% endblock content1 %}
 
 {% block content2 %}
-<div class="text-center">
-	<h3 >Kunjungi Website Django untuk Dokumentasi yang lebih lengkap</h3>
-	<a href="https://www.djangoproject.com/start/overview/">Django</a>	
+<h3 class="text-center m-b-50">Pengalaman Belajar User</h3>
+{% for belajar in belajars %}
+<div class="col-sm-4 m-t-30">
+	<div class="card">
+		<h5 class="card-header">{{belajar.nama}}</h5>
+		<div class="card-body">
+			<p class="card-text">{{belajar.isi}}</p>
+		</div>
+	</div>
 </div>
+{% endfor %}
 {% endblock content2 %}
