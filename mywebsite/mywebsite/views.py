@@ -2,4 +2,7 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html')
+    context = {
+        'judul':'Tutorial Django',
+    }
+    return render(request, 'index.html',context)

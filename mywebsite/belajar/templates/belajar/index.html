@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Tutorial Django | Arphidh</title>
-</head>
-<body>
-	<h1>Selama Datang</h1>
-	<p>Ini adalah web dengan framework Django</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content1 %}
+<div class="col-sm-12">
+	<h3 class="text-center">Cara Install Django</h3>
+	<ol>
+		<li>Install Python</li>
+		<p>Anda bisa download python versi terbaru di website resminya yaitu <a href="https://www.python.org/downloads">https://www.python.org/downloads</a>.Selanjutnya, pilih file installer dan sesuaikan dengan sistem komputer Anda.</p>
+
+		<li>Cek Python Version</li>
+		<p>Untuk melihat apakah instalasi python Anda berhasil atau tidak, Anda bisa melakukan pengecekan versi python Anda, dengan cara membuka command prompt pada windows lalu ketik: python --version</p>
+
+		<li>Upgrade pip</li>
+		<p> Dengan mengetik command berikut: python -m pip install --upgrade pip</p>
+
+		<li>Membuat virtual environment</li>
+		<p>python -m venv env</p>
+
+		<li>Mengaktifkan virtual environment</li>
+		<p>env\Scripts\activate</p>
+
+		<li>Install django</li>
+		<p>pip install django atau jika Anda ingin install spesifik version, Anda bisa mengetik command berikut: pip install django==3.2.4</p>
+
+		<li>Cek Django Version</li>
+		<p>Jika instalasi sudah berhasil, Anda bisa melakukan pengecekan versi django Anda, dengan cara mengetik command berikut: django-admin --version</p>
+
+		<li>Start new project</li>
+		<p>django-admin startproject nama_website</p>
+
+		<li>Run the server</li>
+		<p> menggunakan command berikut: python manage.py runserver</p>
+	</ol>
+</div>
+{% endblock content1 %}
+
+{% block content2 %}
+<div class="text-center">
+	<h3 >Kunjungi Website Django untuk Dokumentasi yang lebih lengkap</h3>
+	<a href="https://www.djangoproject.com/start/overview/">Django</a>	
+</div>
+{% endblock content2 %}
